@@ -25,7 +25,7 @@ resource "azurerm_network_security_group" "this" {
 }
 
 module "diagnosticSetting" {
-  source = "../diagnosticSetting"
+  source = "git::https://github.com/Noya50/hafifot-diagnosticSetting.git"
 
   name                       = "${azurerm_network_security_group.this.name}-diagnostic-setting"
   target_resource_id         = azurerm_network_security_group.this.id

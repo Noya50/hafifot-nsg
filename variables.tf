@@ -34,9 +34,3 @@ variable "security_rules" {
   }))
   default = null
 }
-
-variable "diagnostic_setting_categories" {
-  description = "(Optional) Categories for the diagnostic setting."
-  type = list(string)
-  default = [ "NetworkSecurityGroupEvent", "NetworkSecurityGroupRuleCounter" ]
-}

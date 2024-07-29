@@ -30,5 +30,4 @@ module "diagnosticSetting" {
   name                       = "${azurerm_network_security_group.this.name}-diagnostic-setting"
   target_resource_id         = azurerm_network_security_group.this.id
   log_analytics_workspace_id = var.log_analytics_workspace_id
-  diagnostic_setting_categories = var.diagnostic_setting_categories
 }
